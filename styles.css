@@ -1,0 +1,24 @@
+#contenedor {
+    --size: 16;
+    display: flex;
+    flex-wrap: wrap;
+    width: 640px; /* Ajusta el tamaño total de la cuadrícula */
+    height: 640px;
+    border: 2px solid black;
+    margin-top: 10px;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.cuadro {
+    flex: 0 0 calc(100% / var(--size));
+    aspect-ratio: 1;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    transition: background-color 0.2s;
+}
